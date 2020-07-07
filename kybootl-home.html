@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!--Boostrap CSS-->
+    <link rel="stylesheet" href="../Nucampsite/node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        
+    <!--Additional CSS must be placed after Bootstrap CSS-->
+    <link rel="stylesheet" href="../Nucampsite/node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand" />
+    <link rel="stylesheet" href="kybootl-styles.css" />
+    
+    <title>kybootl</title>
+</head>
+
+<body>
+
+    <header class="jumbotron jumbotron-fluid">
+        <div class="container"> 
+            <div class="row">
+                <div class="col-2"><img src="img/kybootl-logo.png" height="120px" width="150px" /></div>
+                <div class="col-4">
+                    <h1>kybootl</h1>
+                    <h6>the personal library app</h6>
+                </div>
+            </div> 
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data target="kybootlNavbar"></button>
+                    <span class="nabar-toggler-icon"> </span>
+                </button>
+            <div class="collapse navbar-collapse" id="kybootlNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"> <a class="nav-link" href ="#" id="navbartext"><i class="fa fa-home fa-lg" id="navbaricon"></i> Home </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href ="kybootl-about.html" id="navbartext"><i class="fa fa-info fa-lg" id="navbaricon"></i> About </a> </li>
+                    <li class="nav-item"> <a class="nav-link" href ="kybootl-ireadthat.html" id="navbartext"><i class="fa fa-list fa-lg" id="navbaricon"></i> I read that!</a></li>
+                    <li class="nav-item"> <a class="nav-link" href ="#" id="navbartext"><i class="fa fa-book fa-lg" id="navbaricon"></i> Library</a></li>
+                    <li class="nav-item"> <a class="nav-link" href ="#" id="navbartext"><i class="fa fa-thumbs-o-up fa-lg" id="navbaricon"></i> Favorites</a></li>
+                    <li class="nav-item"> <a class="nav-link" href ="#" id="navbartext"><i class="fa fa-comment-o fa-lg" id="navbaricon"></i> Wish List</a></li>
+                    <li class="nav-item"> <a class="nav-link" href ="#" id="navbartext"><i class="fa fa-users fa-lg" id="navbaricon"></i> kybootlers</a></li>
+                    <li class="nav-item"> <a class="nav-link" href ="#" id="navbartext"><i class="fa fa-podcast fa-lg" id="navbaricon"></i> kybootl nation</a></li>
+                    <li class="nav-item"> <a class="nav-link" href ="#" id="navbartext"><i class="fa fa-address-card fa-lg" id="navbaricon"></i> Contact </a></li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- This is a nav bar tab feature
+        <div class="row row-content">
+        <div class="col">
+            <h3>Community Partners</h3>
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link active" href="#bootstrap" role="tab" data-toggle="tab">Bootstrap Outfitters</a></li>
+                <li class="nav-item"><a class="nav-link" href="#git" role="tab" data-toggle="tab">Git Out Expeditions</a></li>
+                <li class="nav-item"><a class="nav-link" href="#mongo" role="tab" data-toggle="tab">Mongo Fly Shop</a></li>
+                <li class="nav-item"><a class="nav-link" href="#node" role="tab" data-toggle="tab">Node Outdoor Apparel</a></li>
+            </ul>
+            
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade show active" id="bootstrap">
+                    <h4>Bootstrap Outfitters <small>Outdoor Gear Specialists</small></h4>
+                    <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with the gear you need at prices you can't beat.</p>
+                </div>  
+                <div role="tabpanel" class="tab-pane fade show" id="git">
+                    <h4>Git Out Expeditions <small>Group Adventure Expeditions</small></h4>
+                    <p class="d-none d-sm-block">Join Git Out Expeditions to explore new horizons with a group of other adventurers!</p>
+                </div>
+                <div role="tabpanel" class="tab-pane fade show" id="mongo">
+                    <h4>Mongo Fly Shop <small>Your Neighborhood Fly Fishing Shop</small></h4>
+                    <p class="d-none d-sm-block">Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.</p>
+                </div>  
+                <div role="tabpanel" class="tab-pane fade show" id="node">
+                    <h4>Node Outdoor Apparel <small>Outdoor Clothes & Shoes</small></h4>
+                    <p class="d-none d-sm-block">From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.</p>
+                </div>
+            </div>
+        </div>
+    </div>-->
+
+<!--Login Div-->
+    <div class="container">  
+        <div class="row">
+            <div class="col text-center m-1 p-1">
+                <div class="col login-container">
+                    <form action="/action_page.php">
+                      <input type="text" placeholder="Username" name="username"> 
+                      <input type="text" placeholder="Password" name="psw">
+                      <button type="submit">Login</button>
+                    </form>
+                  </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row row-content">
+            <div class="col-md-8 mx-auto">
+         <!--Carousel Slide List Items-->
+                 <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                     <ol class="carousel-indicators">
+                         <li data-target="#homeCarousel" data-slide-to="0" class="active"> </li>
+                         <li data-target="#homeCarousel" data-slide-to="1"></li>
+                         <li data-target="#homeCarousel" data-slide-to="2"></li>
+                     </ol>
+         <!--Carousel Div-->
+                     <div class="carousel-inner">
+         <!--Breadcrumb Trail Slide-->
+                         <div class="carousel-item active">
+                             <img class="d-block h-80" src="../img/journalpic.png" height=500px width=100% alt="I read that!" />
+                         
+                             <div class="carousel-caption">
+                                 <h3> I read that! </h3>
+                                 <p class="d-none d-sm-block">Log all of the books you have read in the past.</p>
+                             </div>
+                         </div>
+         <!--React Lake Slide-->
+                         <div class="carousel-item">
+                             <img class="d-block w-100" src="../img/librarypic.png" height=500px width=100% alt="Personal Library" />
+                        
+                             <div class="carousel-caption">
+                                 <h3>My Library</h3>
+                                 <p class="d-none d-sm-block">Personal Database of all the books that you own.</p>
+                             </div>
+                         </div>  
+         <!--Chrome River Slide-->
+                         <div class="carousel-item">
+                             <img class="d-block w-100" src="../favoritespic.png" height=500px width=100% alt="Favorites List" />
+                             
+                             <div class="carousel-caption">
+                             <h3>Favorites</h3>
+                             <p class="d-none d-sm-block">Share your very favorite books with other kybootlers.</p>
+                             </div>
+                         </div>
+                         <div class="carousel-item">
+                            <img class="d-block w-100" src="../wishlistpic.png" height=500px width=100% alt="Wish List" />
+                            
+                            <div class="carousel-caption">
+                            <h3>Wish List</h3>
+                            <p class="d-none d-sm-block">Share your very favorite books with other kybootlers.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img class="d-block w-100" src="../img/kybootlerspic.png" height=500px width=100% alt="Favorites List" />
+                            
+                            <div class="carousel-caption">
+                            <h3>kybootlers</h3>
+                            <p class="d-none d-sm-block">Commune with other kybootlers.</p>
+                            </div>
+                        </div>
+                     </div>  
+         <!--Previous and Next Icons-->
+                     <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                         <span class="carousel-control-prev-icon"> </span>
+                         <span class="sr-only"> Previous </span> 
+                     </a>
+                     <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                         <span class="carousel-control-next-icon"> </span>
+                         <span class="sr-only"> Next </span>
+                     </a>
+                     
+                 </div>
+             </div>
+        </div>
+    </div>
+   
+        
+<!-- Container Body
+    <div class="container" id="mainbody">
+        
+        <div class="row">
+            <div class="col text-center m-1 p-1 border border-5 border-dark">
+                <img src="img/journalpic.png" height="100px" width="100%" />
+                <h3>I read that! </h3>
+                <ul>
+                    <li>Share what you are reading.</li>
+                    <li>Share what you have read.</li>
+                    <li>Suggest books for others.</li>
+                </ul>
+            </div>
+         
+            <div class="col text-center m-1 p-1 border border-5 border-dark">
+                <img src="img/librarypic.png" height="100px" width="100%" />
+                <h3>Library</h3>
+                    <ul>
+                        <li>Track the books you own.</li>
+                        <li>Share library with others.</li>
+                        <li>List books for sale.</li>
+                    </ul>
+            </div>
+            <div class="col text-center m-1 p-1 border border-5 border-dark">
+                <img src="favoritespic.png" height="100px" width="100%" />
+                <h3>Favorites</h3>
+                <ul>
+                    <li>Rank your favorite books.</li>
+                    <li>Share tops lists of any genre.</li>
+                    <li>Comment on other lists.</li>
+                </ul>
+            </div>
+            <div class="col text-center m-1 p-1 border border-5 border-dark">
+                <img src="wishlistpic.png" height="100px" width="100%" />
+                <h3>Wish List</h3>
+                <ul>
+                    <li>List the books you want to read.</li>
+                    <li>List the books you want to buy.</li>
+                    <li>Set notifications for releases.</li>
+                    
+                </ul>
+            </div>
+            <div class="col text-center m-1 p-1 border border-5 border-dark">
+                <img src="img/kybootlerspic.png" height="100px" width="100%" />
+                <h3>kybootlers</h3>
+                <ul>
+                    <li>Meet fellow kybootlers.</li>
+                    <li>Join or Create kybootls.</li>
+                    <li>Make new friends.</li>
+                </ul>
+            </div>
+        </div>
+    -->
+<!--      <div class="row">
+            <div  class="col text-center">
+               <h3>Search By:</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col text-center">
+                <h6>Author</h6>
+                <p>Enter the Author's Name</p>
+            </div>
+            <div class="col text-center">
+                <h6>Title</h6>
+                <p>Enter the Title</p>
+            </div>
+            <div class="col text-center">
+                <h6>Genre</h6>
+                <p>Enter the Title</p>
+            </div>
+        </div>
+    -->
+
+        
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!--<div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>-->
+                <div class="col text-center">
+                    <h5>Social</h5>
+                    <a href="http://instagram.com/" id="navbartext2"><i class="fa fa-instagram"></i> Instagram</a>
+                    <a href="http://facebook.com/" id="navbartext2"><i class="fa fa-facebook"></i> Facebook</a>
+                    <a href="http://twitter.com/" id="navbartext2"><i class="fa fa-twitter"></i> Twitter</a>
+                    <a href="http://youtube.com/"id="navbartext2"><i class="fa fa-youtube"></i> YouTube</a>
+                </div>
+                <div class="col text-center">
+                    <h5>Contact</h5>
+                    <i class="fa fa-phone fa-lg text-primary"></i> 1-123-456-7890
+
+                    <i class="fa fa-envelope fa-lg text-primary"></i> kylie@kybootl.com
+                </div>
+           </div>
+        </div>
+    </footer>
+     <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

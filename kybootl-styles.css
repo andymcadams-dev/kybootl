@@ -1,0 +1,73 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #e9e7e8;
+}
+
+/* causes the background of the list item to change to this color when mouse hovers*/
+li a:hover {
+    color: #678dd5;
+}
+h1 {
+    font-family: "Quicksand";
+    font-size: 96px;
+    font-weight: bold;
+    color: #f8c2e8;
+}
+
+h2, h3 {
+    font-family: "Quicksand";
+    color: #678dd5;
+}
+h6 {
+    color: white;
+}
+
+h4 {color: #f8c2e8;
+}
+header h2 {
+    color: white;
+}
+footer{
+    background-image: linear-gradient(to right,#678dd5, white);
+    padding: 20px 0;
+}
+.jumbotron {
+    padding: 30px;
+    background-image: linear-gradient(to right,#678dd5, white);
+    
+
+}
+.row-content {
+    padding: 50px 0;
+    border-bottom: 1px ridge;
+    min-height: 200px;
+}
+.navbar {
+   background-color: #f8c2e8;
+    border: black;
+}
+
+.jumbotron {
+    margin: 0;
+}
+
+
+
+#navbaricon {
+    color: grey;
+}
+
+#navbartext {
+    color: grey;
+}
+
+#navbartext2 {
+    color: white;
+}
+
+.carousel-caption {
+    background-color:rgba(0,0,0, 0.5);
+}
+.carousel {
+    border: solid #678dd5;
+}
